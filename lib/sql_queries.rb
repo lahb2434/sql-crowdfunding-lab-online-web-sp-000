@@ -36,7 +36,7 @@ end
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
    SELECT projects.title, pledges.amount FROM projects
    JOIN pledges ON projects.id = pledges.project_id
-   WHERE project.category = 'music'
+   WHERE projects.category = 'music'
    ORDER BY projects.title
 end
 
